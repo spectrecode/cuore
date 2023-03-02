@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel='stylesheet' href='css/owl.carousel.min.css')
+        link(rel='stylesheet' href='css/owl.theme.default.min.css')
+        title CUORE SPORT
+    body
+        include includes/header
+        section.bg1.b-attachment
+            .box_cinta
+                .cinta
+                    .sub Nacional
+                .rrss 
+                    a(href="")
+                        i.icon-facebook
+                    a(href="")
+                        i.icon-twitter
+                    a(href="")
+                        i.icon-share
+            .box_bg1
+                .container
+                    .text
+                        h1 Torneo de los padelamigos
+                        p.p_sm Organizado por: #[strong Fulanito padel]
+                    .info-datos 
+                        .camp 
+                            i.icon-calendar
+                            p Fecha de inicio
+                        .camp 
+                            i.icon-location1
+                            p Lugar
+                    .botones
+                        a.btn.line(href="") Más información
+                        a.btn.blue(href="") Inscríbete
+        section.proximos_torneos
+            .container
+                .tittle_more 
+                    h3 Próximos torneos
+                    .more 
+                        p Ver más 
+                        i.icon-chevron-right
+                .gallery_cards.owl-carousel
+                    mixin cardTorneos 
+                        include includes/cards
+                    + cardTorneos
+                    + cardTorneos
+                    + cardTorneos
+                    + cardTorneos
+                a.btn.blue(href="") Ver todos los torneos
+        section.como_funciona 
+            .container
+                h3 ¿Cómo funciona?
+                .btn_como_funciona 
+                    .como1.organizador 
+                        p.p_sm Si eres organizador
+                    .como1.active.jugador 
+                        p.p_sm Si eres jugador
+                .owl-carousel
+                    mixin comoFunciona 
+                        .info_como_funciona
+                            p Meta Info
+                            p.p_sm Amet minim mollit non deserunt ullamco est sit aliqua dolor.
+                            img(src=src="../img/img2.png", alt="" width="100%")
+                    + comoFunciona 
+                    + comoFunciona
+        section.fuera 
+            .container 
+                .tittle_fuera 
+                    h3 ¡No te quedes fuera!
+                .owl-carousel
+                    mixin ventajas
+                        .info_fuera
+                            img(src=src="../img/img2.png", alt="" width="100%")
+                            h5 Ventajas de Ecopadel
+                            p Some example text is placed here to show what this component will look like fully built out.
+                    + ventajas
+                    + ventajas
+                    + ventajas
+                .reasons_fuera
+                    .reasons.box_shadow 
+                        h5 Share a reply
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla risus eget enim ornare ac aliquam, platea. Orci semper mauris.
+                    .reasons.box_shadow 
+                        h5 Share a reply
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla risus eget enim ornare ac aliquam, platea. Orci semper mauris.
+                    .reasons.box_shadow 
+                        h5 Share a reply
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla risus eget enim ornare ac aliquam, platea. Orci semper mauris.
+        section.asociados 
+            .container
+                h3 Asociados
+                .logos_asociados 
+                    img(src=src="../img/img_logo.png", alt="")
+                    img(src=src="../img/img_logo.png", alt="")
+                    img(src=src="../img/img_logo.png", alt="")
+                    img(src=src="../img/img_logo.png", alt="")
+                    img(src=src="../img/img_logo.png", alt="")
+        section.descarga 
+            .container
+                h3 Descarga nuestra app
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .box_img_descarga 
+                    img(src=src="../img/cel.png", alt="")
+                    .logos_descarga 
+                        a(href="") 
+                            img(src=src="../img/logo_store.png", alt="")
+                        a(href="") 
+                            img(src=src="../img/logo_google.png", alt="")
+                        a(href="") 
+                            img(src=src="../img/logo_app.png", alt="") 
+        section.experiencia 
+            .container
+                h3 Experiencia Cuore
+                .owl-carousel
+                    mixin experiencia 
+                        img(src=src="../img/img2.png", alt="")
+                    + experiencia
+                    + experiencia
+                    + experiencia
+                .noticias 
+                    h3 Noticias
+                    .box_noticias
+                        mixin cardNoticias
+                            include includes/noticia
+                        + cardNoticias
+                        + cardNoticias
+                        a.btn.green(href="") Ver más noticias
+        section.sumar_torneo
+            .container
+                h3 ¿Quieres sumar tu próximo torneo? 
+                p What a brand new resource, You can try our resource and explore how it works
+                .botones
+                    a.btn.line.white(href="") Habla con un asesor
+                    a.btn.green(href="") Suma tu torneo
+        include includes/footer
+    script(src="js/plugins/jquery.3.6.3.js")
+    script(src="js/plugins/OwlCarousel2-2.3.4.js")
+    script(src="js/script.js")

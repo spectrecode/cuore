@@ -1,0 +1,46 @@
+.card{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    .img_card{
+        height: 165px;
+        background-image: url("../img/img1.png");
+        background-size: cover;
+        @include blueGradient;
+        .box_cinta{
+            padding-top: 1em;
+        }
+    }
+    .desc_card{
+        margin: 1.4375em 0;
+        padding: 0 20px;
+        background-color: $white2;
+        > p {
+            color: $green;
+        }
+        .nombre {
+            margin-bottom: 1em;
+            margin-top: 0.1em;
+        }
+        .prize{
+            strong{
+                font-size: 1.875em;
+            }
+        }
+    }
+    .info-datos {
+        .camp{
+            i{
+                color: $gray2;
+            }
+        }
+    }
+    .tag{
+        background-color: $green;
+        display: inline-block;
+        color: $white;
+        padding: 4px 20px;
+        border-radius: 50px;
+        margin-bottom: 1em;
+    }
+}

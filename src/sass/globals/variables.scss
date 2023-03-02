@@ -1,0 +1,25 @@
+$blue       :  #287AC0;
+$green      :  #92BD3A;
+$white      :  #F8FBFD;
+$white2      :  #fafafa;
+$gray       :  #58595B;
+$gray2      :  #A2A2A2;
+$tranparent :  #1b1b1b4d;
+$mixBlue    :  linear-gradient(180deg, #1b1b1bbb 19.32%, rgba(88, 89, 91, 0) 60.85%, #1b1b1bd7 100%), linear-gradient(0deg, rgba(17, 41, 63, 0.464), rgba(40, 58, 73, 0.481));
+
+@mixin blueGradient{
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: inherit;
+        background: $mixBlue;
+        background-blend-mode: multiply;
+        z-index: 0;
+    }
+}
+@mixin blackGradient{
+    background: linear-gradient(180deg, #1b1b1bd7 0%, rgba(88, 89, 91, 0) 100%);
+    background-blend-mode: multiply;
+}

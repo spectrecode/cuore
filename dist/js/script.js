@@ -1,0 +1,1 @@
+$(".owl-carousel").owlCarousel({loop:!0,margin:20,responsive:{0:{items:1.15},600:{items:3},1e3:{items:4}}});

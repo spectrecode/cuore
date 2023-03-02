@@ -1,0 +1,21 @@
+header{
+    position: fixed;
+    padding: 23px 0;
+    width: 100%;
+    z-index: 999;
+    @include blackGradient;
+    .box_header{
+        display: flex;
+        justify-content: space-between;
+        .logo_cuore{
+            img{
+                width: 150px;
+            }
+        }
+    }
+    // .nav_mobile{
+    //     .icon_hamburguer{
+    //         height: 50px;
+    //     }
+    // }
+}

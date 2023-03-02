@@ -1,0 +1,46 @@
+footer{
+    background-color: $blue;
+    padding: 2em 0;
+    a{
+        color: $white2;
+        font-weight: 500;
+        line-height: 2.5em;
+    }
+    img{
+        width: 6.5em;
+    }
+    .box_footer{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 8px;
+        .menu_footer{
+            a{
+                font-family: "magistral";
+            }
+        }
+    }
+    .logo_rrss{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2em;
+        position: relative;
+        .footer_rrss{
+            display: flex;
+            margin: 0 -10px;
+            a{
+                margin: 0 10px;
+            }
+        }
+        &:before{
+            position: absolute;
+            content: "";
+            height: 0.5px;
+            width: 100%;
+            background-color: white;
+            top: -25px;
+            margin-bottom: 25px;
+            opacity: 0.5;
+        }
+    }
+}

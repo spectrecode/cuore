@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins';
+    letter-spacing: 1.2px;
+}
+h1,
+h3,
+h5{
+    font-family: 'Magistral';
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+h1{
+    font-size: 2.625em;
+    line-height: 44.4px;
+    margin-bottom: 8px;
+}
+h3{
+    font-size: 36px;
+    line-height: 36.2px;
+}
+h5{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.75px;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+p{
+    font-size: 18px;
+    font-weight: 300;
+    &.p_sm{
+        font-size: 16px;
+    }
+}
+.sub{
+    font-size: 12px;
+    font-weight: 500;
+}
+.box_cinta{
+    z-index: 100;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+.box_shadow{
+    box-shadow: 0px 0px 10px 3px rgba(88, 89, 91, 0.05);
+}
+.cinta{
+    color: $white;
+    padding: 5px 10%;
+    background-color: $green;
+    border-radius: 0 8px 8px 0;
+}
+.more{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: right;
+    p{
+        font-size: 14px;
+        color: $green;
+        font-weight: 500;
+    }
+    i{
+        color: $green;
+    }
+}
+.tittle_more{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.rrss{
+    display: flex;
+    margin-left: auto;
+    a{
+        border: 1px solid $green;
+        border-radius: 100%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 4px;
+    }
+    i{
+        color: $green;
+    }
+}
+.info-datos {
+    .camp{
+        display: flex;
+        align-items: center;
+        margin-bottom:0.625em;
+        i{
+            margin-right: 8px;
+            color: $green;
+        }
+    }
+}
+.container{
+    padding: 0 20px;
+    max-width: 1272px;
+    margin: auto;
+    height: 100%;
+}
+.btn{
+    padding: 18px 22.5px;
+    font-size: 1.125em;
+    font-weight: 600;
+    border-radius: 100px;
+    color: $white;
+    text-align: center;
+    margin: 14px 0;
+    &.blue{
+        background-color: $blue;
+    }
+    &.green{
+        background-color: $green;
+    }
+    &.line{
+        border: 2px solid $green;
+        background-color: $tranparent;
+        color: $green;
+        &.white{
+            background-color: $white2;
+        }
+    }
+}
