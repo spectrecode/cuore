@@ -11,13 +11,10 @@ section{
     @include blueGradient;
     color: $white;
     padding: 0;
-    .box_cinta{
-        padding-top: 5.9375em;
-    }
     .box_bg1{
         z-index: 100;
         position: relative;
-        top: 32%;
+        top: 42%;
         transform: translateY(-160px);
         .info-datos{
             margin-top: 3em;
@@ -143,13 +140,21 @@ section{
         }
     }
 }
-
-.sumar_torneo{
-    // color: $gray;
-}
 .b-attachment{
     height: 675px;
     background-size: cover;
     background-attachment: fixed;
+}
+
+@media only screen and (min-width: 768px) {
+    .bg1{
+        .box_cinta{
+            display: inline-block;
+        }
+        .cinta{
+            background-color: transparent;
+            color: $green;
+        }
+    }
 }
 

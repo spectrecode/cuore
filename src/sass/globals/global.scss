@@ -13,8 +13,8 @@ h5{
     font-weight: 700;
 }
 h1{
-    font-size: 2.625em;
-    line-height: 44.4px;
+    font-size: 2.5625em;
+    line-height: 50px;
     margin-bottom: 8px;
 }
 h3{
@@ -31,32 +31,37 @@ a{
     display: block;
 }
 p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
+
     &.p_sm{
         font-size: 16px;
     }
+}
+section{
+    padding: 3.75em 0;
 }
 .sub{
     font-size: 12px;
     font-weight: 500;
 }
 .box_cinta{
-    z-index: 100;
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
-}
-.box_shadow{
-    box-shadow: 0px 0px 10px 3px rgba(88, 89, 91, 0.05);
+    margin-left: -20px;
+    margin-bottom: 3em;
+    z-index: 999;
+    position: relative;
 }
 .cinta{
     color: $white;
     padding: 5px 10%;
     background-color: $green;
     border-radius: 0 8px 8px 0;
+}
+.box_shadow{
+    box-shadow: 0px 0px 10px 3px rgba(88, 89, 91, 0.05);
 }
 .more{
     display: flex;
@@ -133,5 +138,10 @@ p{
         &.white{
             background-color: $white2;
         }
+    }
+}
+@media only screen and (min-width: 768px) {
+    h1{
+        // font-size: ;
     }
 }

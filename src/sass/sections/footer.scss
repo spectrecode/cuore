@@ -1,46 +1,44 @@
 footer{
-    background-color: $blue;
-    padding: 2em 0;
+    color: $white2;
+    text-align: center;
     a{
         color: $white2;
         font-weight: 500;
         line-height: 2.5em;
     }
-    img{
-        width: 6.5em;
-    }
     .box_footer{
-        display: flex;
-        justify-content: space-between;
         padding-bottom: 8px;
-        .menu_footer{
-            a{
+        background-color: $blue;
+        padding: 2em 0; 
+        .logo_rrss{
+            margin-top: 2em;
+            position: relative;
+            > p{
                 font-family: "magistral";
+                font-size: 18px;
+                font-weight: 500;
+            }
+            img{
+                width: 13em;
+                margin-bottom: 1.5em;
+            }
+            .footer_rrss{
+                margin-top: 0.5em;
+                a{
+                    margin: 0 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        margin-left: 10px;
+                    }
+                }
+                
             }
         }
     }
-    .logo_rrss{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 2em;
-        position: relative;
-        .footer_rrss{
-            display: flex;
-            margin: 0 -10px;
-            a{
-                margin: 0 10px;
-            }
-        }
-        &:before{
-            position: absolute;
-            content: "";
-            height: 0.5px;
-            width: 100%;
-            background-color: white;
-            top: -25px;
-            margin-bottom: 25px;
-            opacity: 0.5;
-        }
+    .box_copyright{
+        background-color: $green;
+        padding: 1em 0;
     }
 }

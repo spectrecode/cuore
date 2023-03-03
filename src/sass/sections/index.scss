@@ -1,0 +1,22 @@
+.banner_hero{
+    background-image: url("../img/banner_hero_m.png");
+    background-size: cover;
+    background-position: 50%;
+    color: $white2;
+    height: 572px;
+    .box_banner{
+        position: relative;
+        top: 25%;
+        .sub{
+            color: $limon;
+            margin-bottom: 1em;
+        }
+        h1{
+            margin-bottom: 0.5em;
+        }
+    }
+}
+.proximos_torneos{
+    color: $gray;
+    // background-color: $white;
+}
