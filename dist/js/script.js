@@ -1,1 +1,0 @@
-$(".owl-carousel").owlCarousel({loop:!0,margin:20,responsive:{0:{items:1},600:{items:3},1e3:{items:4}}});var img1Mobile=function(){var o=$(window).width();$(".gallery_cards").each(function(){o<768?$(this).addClass(".owl-carousel"):$(this).removeClass(".owl-carousel")})};$(document).ready(function(){img1Mobile()}),$(window).resize(function(){img1Mobile()});

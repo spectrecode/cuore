@@ -296,6 +296,7 @@ section {
   margin-bottom: 3em;
   z-index: 999;
   position: relative;
+  padding-right: 20px;
 }
 
 .cinta {
@@ -303,6 +304,29 @@ section {
   padding: 5px 10%;
   background-color: #92BD3A;
   border-radius: 0 8px 8px 0;
+}
+
+.buscador {
+  background-color: #fafafa;
+  padding: 10px 20px;
+  margin: 0 -20px;
+}
+.buscador .box_buscador {
+  display: flex;
+  justify-content: flex-end;
+}
+.buscador .item {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #A2A2A2;
+  color: #A2A2A2;
+  opacity: 0.5;
+}
+.buscador .item.vista {
+  background-color: #A2A2A2;
+  color: #fafafa;
 }
 
 .box_shadow {
@@ -390,6 +414,50 @@ section {
   background-color: #fafafa;
 }
 
+.paginador {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .buscador {
+    background-color: transparent;
+  }
+  .paginador {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .paginador .direccion {
+    line-height: 15px;
+    color: #A2A2A2;
+    opacity: 0.5;
+  }
+  .paginador .direccion:last-child {
+    color: #92BD3A;
+    opacity: 1;
+  }
+  .paginador .numero_paginador {
+    display: flex;
+    margin: 0 10px;
+  }
+  .paginador .numero_paginador a {
+    font-weight: 600;
+    color: #A2A2A2;
+    height: 29px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px solid #A2A2A2;
+    margin: 0 3px;
+    align-items: center;
+  }
+  .paginador .numero_paginador a.active {
+    background-color: #92BD3A;
+    color: #fafafa;
+    border-color: #92BD3A;
+  }
+}
 header {
   position: fixed;
   padding: 23px 0;
@@ -427,12 +495,23 @@ header .box_header .logo_cuore img {
 
 .proximos_torneos {
   color: #58595B;
+  background-color: #F8FBFD;
 }
 
+@media only screen and (min-width: 768px) {
+  .banner_hero .box_banner {
+    width: 500px;
+  }
+  .proximos_torneos .gallery_cards {
+    display: flex;
+  }
+}
 .card {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  margin: 1.4375em 10px;
+  width: 100%;
 }
 .card .img_card {
   height: 165px;
@@ -453,8 +532,7 @@ header .box_header .logo_cuore img {
   padding-top: 1em;
 }
 .card .desc_card {
-  margin: 1.4375em 0;
-  padding: 0 20px;
+  padding: 30px 20px 20px;
   background-color: #fafafa;
 }
 .card .desc_card > p {
@@ -521,4 +599,11 @@ footer .box_footer .logo_rrss .footer_rrss a p {
 footer .box_copyright {
   background-color: #92BD3A;
   padding: 1em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .box_copyright {
+    display: flex;
+    justify-content: center;
+  }
 }

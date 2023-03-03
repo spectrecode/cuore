@@ -23,14 +23,35 @@ html(lang="en")
                     //- .more 
                         p Ver más 
                         i.icon-chevron-right
+                .buscador
+                    .box_buscador
+                        .item.vista
+                            i.icon-mail 
+                        .item.calendar
+                            i.icon-calendar
                 .gallery_cards
                     mixin cardTorneos 
                         include includes/cards
                     + cardTorneos
                     + cardTorneos
                     + cardTorneos
+                .gallery_cards
+                    mixin cardTorneos 
+                        include includes/cards
                     + cardTorneos
-                a.btn.blue(href="") Ver todos los torneos
+                    + cardTorneos
+                    + cardTorneos
+                .paginador 
+                    a.direccion(href="")
+                        i.icon-chevron-left
+                    .numero_paginador 
+                        a(href="").active 1 
+                        a(href="") 2 
+                        a(href="") 3 
+                        a(href="") 4 
+                    a.direccion(href="")
+                        i.icon-chevron-right
+                //- a.btn.blue(href="") Ver todos los torneos
         include includes/footer
     script(src="js/plugins/jquery.3.6.3.js")
     script(src="js/plugins/OwlCarousel2-2.3.4.js")

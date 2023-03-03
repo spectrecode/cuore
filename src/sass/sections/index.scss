@@ -18,5 +18,15 @@
 }
 .proximos_torneos{
     color: $gray;
-    // background-color: $white;
+    background-color: $white;
+}
+@media only screen and (min-width: 768px) {
+    .banner_hero .box_banner{
+        width: 500px;
+    }
+    .proximos_torneos{
+        .gallery_cards{
+            display: flex;
+        }
+    }
 }

@@ -1,38 +1,30 @@
-$('.owl-carousel').owlCarousel({
-    // stagePadding: 50,
-    loop:true,
-    margin:20,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4
-        }
-    }
-})
 
-var img1Mobile = function(){
-    var width        = $(window).width();
+// var $homeSlider = $(".gallery_cards");
 
-    $('.gallery_cards').each(function(){
-        if (width < 768){
-            $(this).addClass('.owl-carousel')
-        } else{
-            $(this).removeClass('.owl-carousel')
-        }
-    })
+// $(window).resize(function() {
+//   showHomeSlider();
+// });
 
-}
+// function showHomeSlider() {
+//   if ($homeSlider.data("owlCarousel") !== "undefined") {
+//     if (window.matchMedia('(min-width: 768px)').matches) {
+//       initialHomeSlider();
+//     } else {
+//       destroyHomeSlider();
+//     }
+//   }
+// }
+// showHomeSlider();
 
+// function initialHomeSlider() {
+//   $homeSlider.addClass("owl-carousel").owlCarousel({
+//     items: 3,
+//     loop: true,
+//     smartSpeed: 1000,
+//     margin:20
+//   });
+// }
 
-$(document).ready(function(){
-    img1Mobile()
-});
-
-$(window).resize(function(){
-    img1Mobile()
-});
+// function destroyHomeSlider() {
+//   $homeSlider.trigger("destroy.owl.carousel").removeClass("owl-carousel");
+// }

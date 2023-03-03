@@ -53,12 +53,36 @@ section{
     margin-bottom: 3em;
     z-index: 999;
     position: relative;
+    padding-right: 20px;
 }
 .cinta{
     color: $white;
     padding: 5px 10%;
     background-color: $green;
     border-radius: 0 8px 8px 0;
+}
+.buscador{
+    background-color: $white2;
+    padding: 10px 20px;
+    margin: 0 -20px;
+    .box_buscador{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .item{
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid $gray2;
+        color: $gray2;
+        opacity: 0.5;
+        &.vista{
+            background-color: $gray2;
+            color: $white2;
+        }
+    }
+    
 }
 .box_shadow{
     box-shadow: 0px 0px 10px 3px rgba(88, 89, 91, 0.05);
@@ -140,8 +164,46 @@ section{
         }
     }
 }
+.paginador{
+    display: none;
+}
 @media only screen and (min-width: 768px) {
-    h1{
-        // font-size: ;
+    .buscador{
+        background-color: transparent;
+    }
+    .paginador{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .direccion{
+            line-height: 15px;
+            color: $gray2;
+            opacity: 0.5;
+        }
+        .direccion:last-child{
+            color: $green;
+            opacity: 1;
+        }
+        .numero_paginador{
+            display: flex;
+            margin: 0 10px;
+            a{
+                font-weight: 600;
+                color: $gray2;
+                height: 29px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                border-radius: 100%;
+                border: 1px solid $gray2;
+                margin: 0 3px;
+                align-items: center;
+            }
+            a.active{
+                background-color: $green;
+                color: $white2;
+                border-color: $green;
+            }
+        }
     }
 }
