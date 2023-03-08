@@ -1,3 +1,127 @@
+
+  
+@font-face {
+  font-family: 'Magistral Extra';
+  src: url('../font/Magistral-ExtraBoldItalic.eot');
+  src: local('Magistral Extra Bold Italic'), local('Magistral-ExtraBoldItalic'),
+      url('../font/Magistral-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Magistral-ExtraBoldItalic.woff2') format('woff2'),
+      url('../font/Magistral-ExtraBoldItalic.woff') format('woff'),
+      url('../font/Magistral-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('../font/Magistral-LightItalic.eot');
+  src: local('Magistral Light Italic'), local('Magistral-LightItalic'),
+      url('../font/Magistral-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Magistral-LightItalic.woff2') format('woff2'),
+      url('../font/Magistral-LightItalic.woff') format('woff'),
+      url('../font/Magistral-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Magistral Extra';
+  src: url('../font/Magistral-ExtraBold.eot');
+  src: local('Magistral Extra Bold'), local('Magistral-ExtraBold'),
+      url('../font/Magistral-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Magistral-ExtraBold.woff2') format('woff2'),
+      url('../font/Magistral-ExtraBold.woff') format('woff'),
+      url('../font/Magistral-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('../font/Magistral-Medium.eot');
+  src: local('Magistral Medium'), local('Magistral-Medium'),
+      url('../font/Magistral-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../font/Magistral-Medium.woff2') format('woff2'),
+      url('../font/Magistral-Medium.woff') format('woff'),
+      url('../font/Magistral-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magistral Book';
+  src: url('../font/Magistral-BookItalic.eot');
+  src: local('Magistral Book Italic'), local('Magistral-BookItalic'),
+      url('../font/Magistral-BookItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Magistral-BookItalic.woff2') format('woff2'),
+      url('../font/Magistral-BookItalic.woff') format('woff'),
+      url('../font/Magistral-BookItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Magistral Book';
+  src: url('../font/Magistral-Book.eot');
+  src: local('Magistral Book'), local('Magistral-Book'),
+      url('../font/Magistral-Book.eot?#iefix') format('embedded-opentype'),
+      url('../font/Magistral-Book.woff2') format('woff2'),
+      url('../font/Magistral-Book.woff') format('woff'),
+      url('../font/Magistral-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('../font/Magistral-Bold.eot');
+  src: local('Magistral Bold'), local('Magistral-Bold'),
+      url('../font/Magistral-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Magistral-Bold.woff2') format('woff2'),
+      url('../font/Magistral-Bold.woff') format('woff'),
+      url('../font/Magistral-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('../font/Magistral-Light.eot');
+  src: local('Magistral Light'), local('Magistral-Light'),
+      url('../font/Magistral-Light.eot?#iefix') format('embedded-opentype'),
+      url('../font/Magistral-Light.woff2') format('woff2'),
+      url('../font/Magistral-Light.woff') format('woff'),
+      url('../font/Magistral-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('../font/Magistral-MediumItalic.eot');
+  src: local('Magistral Medium Italic'), local('Magistral-MediumItalic'),
+      url('../font/Magistral-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Magistral-MediumItalic.woff2') format('woff2'),
+      url('../font/Magistral-MediumItalic.woff') format('woff'),
+      url('../font/Magistral-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url('../font/Magistral-BoldItalic.eot');
+  src: local('Magistral Bold Italic'), local('Magistral-BoldItalic'),
+      url('../font/Magistral-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../font/Magistral-BoldItalic.woff2') format('woff2'),
+      url('../font/Magistral-BoldItalic.woff') format('woff'),
+      url('../font/Magistral-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../font/icomoon.eot');
@@ -184,127 +308,5 @@
 }
 .icon-win:before {
   content: "\e933";
-}
-
-
-  
-@font-face {
-    font-family: 'Magistral Extra';
-    src: url('/font/Magistral-ExtraBoldItalic.eot');
-    src: local('Magistral Extra Bold Italic'), local('Magistral-ExtraBoldItalic'),
-        url('/font/Magistral-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('/font/Magistral-ExtraBoldItalic.woff2') format('woff2'),
-        url('/font/Magistral-ExtraBoldItalic.woff') format('woff'),
-        url('/font/Magistral-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Magistral';
-    src: url('/font/Magistral-LightItalic.eot');
-    src: local('Magistral Light Italic'), local('Magistral-LightItalic'),
-        url('/font/Magistral-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('/font/Magistral-LightItalic.woff2') format('woff2'),
-        url('/font/Magistral-LightItalic.woff') format('woff'),
-        url('/font/Magistral-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Magistral Extra';
-    src: url('/font/Magistral-ExtraBold.eot');
-    src: local('Magistral Extra Bold'), local('Magistral-ExtraBold'),
-        url('/font/Magistral-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('/font/Magistral-ExtraBold.woff2') format('woff2'),
-        url('/font/Magistral-ExtraBold.woff') format('woff'),
-        url('/font/Magistral-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Magistral';
-    src: url('/font/Magistral-Medium.eot');
-    src: local('Magistral Medium'), local('Magistral-Medium'),
-        url('/font/Magistral-Medium.eot?#iefix') format('embedded-opentype'),
-        url('/font/Magistral-Medium.woff2') format('woff2'),
-        url('/font/Magistral-Medium.woff') format('woff'),
-        url('/font/Magistral-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Magistral Book';
-    src: url('/font/Magistral-BookItalic.eot');
-    src: local('Magistral Book Italic'), local('Magistral-BookItalic'),
-        url('/font/Magistral-BookItalic.eot?#iefix') format('embedded-opentype'),
-        url('/font/Magistral-BookItalic.woff2') format('woff2'),
-        url('/font/Magistral-BookItalic.woff') format('woff'),
-        url('/font/Magistral-BookItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Magistral Book';
-    src: url('/font/Magistral-Book.eot');
-    src: local('Magistral Book'), local('Magistral-Book'),
-        url('/font/Magistral-Book.eot?#iefix') format('embedded-opentype'),
-        url('/font/Magistral-Book.woff2') format('woff2'),
-        url('/font/Magistral-Book.woff') format('woff'),
-        url('/font/Magistral-Book.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Magistral';
-    src: url('/font/Magistral-Bold.eot');
-    src: local('Magistral Bold'), local('Magistral-Bold'),
-        url('/font/Magistral-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/font/Magistral-Bold.woff2') format('woff2'),
-        url('/font/Magistral-Bold.woff') format('woff'),
-        url('/font/Magistral-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Magistral';
-    src: url('/font/Magistral-Light.eot');
-    src: local('Magistral Light'), local('Magistral-Light'),
-        url('/font/Magistral-Light.eot?#iefix') format('embedded-opentype'),
-        url('/font/Magistral-Light.woff2') format('woff2'),
-        url('/font/Magistral-Light.woff') format('woff'),
-        url('/font/Magistral-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Magistral';
-    src: url('/font/Magistral-MediumItalic.eot');
-    src: local('Magistral Medium Italic'), local('Magistral-MediumItalic'),
-        url('/font/Magistral-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('/font/Magistral-MediumItalic.woff2') format('woff2'),
-        url('/font/Magistral-MediumItalic.woff') format('woff'),
-        url('/font/Magistral-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Magistral';
-    src: url('/font/Magistral-BoldItalic.eot');
-    src: local('Magistral Bold Italic'), local('Magistral-BoldItalic'),
-        url('/font/Magistral-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('/font/Magistral-BoldItalic.woff2') format('woff2'),
-        url('/font/Magistral-BoldItalic.woff') format('woff'),
-        url('/font/Magistral-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
 }
 
