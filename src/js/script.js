@@ -1,30 +1,44 @@
+function miCalendario(){
+    var calendarEl = document.getElementById('calendar');
+      
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            height:'70%',
+            locale: 'es',
+            firstDay:1,
+            // height:'300',
+            headerToolbar: {
+                right: "prev,next"
+            },
+            events: [
+                {
+                id: 'a',
+                title: 'Torneo Padeleando',
+                start: '2023-03-05'
+                },
+                {
+                id: 'b',
+                title: 'Sunset Padel',
+                start: '2023-03-05'
+                },
+                {
+                id: 'c',
+                title: 'my event C',
+                start: '2023-03-06'
+                },
+                {
+                id: 'd',
+                title: 'my event D',
+                start: '2023-03-06'
+                },
+            ]
+        });
+      
+        calendar.render();
+}
 
-// var $homeSlider = $(".gallery_cards");
-
-// $(window).resize(function() {
-//   showHomeSlider();
-// });
-
-// function showHomeSlider() {
-//   if ($homeSlider.data("owlCarousel") !== "undefined") {
-//     if (window.matchMedia('(min-width: 768px)').matches) {
-//       initialHomeSlider();
-//     } else {
-//       destroyHomeSlider();
-//     }
-//   }
-// }
-// showHomeSlider();
-
-// function initialHomeSlider() {
-//   $homeSlider.addClass("owl-carousel").owlCarousel({
-//     items: 3,
-//     loop: true,
-//     smartSpeed: 1000,
-//     margin:20
-//   });
-// }
-
-// function destroyHomeSlider() {
-//   $homeSlider.trigger("destroy.owl.carousel").removeClass("owl-carousel");
-// }
+  $(".buscador .calendar").click(function(){
+    $(".proximos_torneos").hide()
+    // miCalendario()
+    $(".calendario").show()
+    miCalendario()
+  })

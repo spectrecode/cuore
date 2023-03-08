@@ -16,10 +16,11 @@
         }
     }
 }
-.proximos_torneos{
+.proximos_torneos, .calendar{
     color: $gray;
     background-color: $white;
 }
+
 @media only screen and (min-width: 768px) {
     .banner_hero .box_banner{
         width: 500px;
@@ -30,3 +31,14 @@
         }
     }
 }
+.calendario{
+    display: none;
+    .box_calendar{
+        height: 1000px;
+    }
+}
+
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+  }

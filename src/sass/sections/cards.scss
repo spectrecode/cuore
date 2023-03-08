@@ -2,8 +2,6 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    margin: 1.4375em 10px;
-    width: 100%;
     .img_card{
         height: 165px;
         background-image: url("../img/img1.png");
@@ -43,5 +41,11 @@
         padding: 4px 20px;
         border-radius: 50px;
         margin-bottom: 1em;
+    }
+}
+@media only screen and (min-width: 768px){
+    .card{
+        margin: 1.4375em 10px;
+        width: 100%;
     }
 }

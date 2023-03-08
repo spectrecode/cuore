@@ -563,7 +563,7 @@ header .box_header .logo_cuore img {
   margin-bottom: 0.5em;
 }
 
-.proximos_torneos {
+.proximos_torneos, .calendar {
   color: #58595B;
   background-color: #F8FBFD;
 }
@@ -576,12 +576,22 @@ header .box_header .logo_cuore img {
     display: flex;
   }
 }
+.calendario {
+  display: none;
+}
+.calendario .box_calendar {
+  height: 1000px;
+}
+
+#calendar {
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
 .card {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  margin: 1.4375em 10px;
-  width: 100%;
 }
 .card .img_card {
   height: 165px;
@@ -627,6 +637,12 @@ header .box_header .logo_cuore img {
   margin-bottom: 1em;
 }
 
+@media only screen and (min-width: 768px) {
+  .card {
+    margin: 1.4375em 10px;
+    width: 100%;
+  }
+}
 footer {
   color: #fafafa;
   text-align: center;
